@@ -1,5 +1,6 @@
 
 @use '../custom' as *;
+@use '../components/mixins';
 
 .services {
     position: relative;
@@ -10,10 +11,10 @@
         margin-top: 0;
 
         p{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
 
             @include media-breakpoint-up(lg) {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -32,7 +33,23 @@
     }
 
     &__pic{
-        max-width: 100%;
+        
+        img{
+            max-width: 60% !important;
+            margin: auto !important;
+            height: 34rem;
+            border-radius: 0.5rem;
+            @include media-breakpoint-down(md) {
+                height: auto;
+            }
+            
+        }
+    }
 
+    
+}
+.company-portfolio {
+    @include media-breakpoint-down(sm) {
+        flex-direction: column-reverse;
     }
 }

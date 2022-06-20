@@ -24,6 +24,7 @@
     &__info{
         padding: 0.4rem;
         font-weight: 600;
+        align-self: center;
 
 
         &--title{
@@ -33,6 +34,10 @@
 
             @include media-breakpoint-up(sm) {
                 font-size: 1.4rem;
+            }
+
+            &:hover{
+                color: $secondary !important;
             }
 
         }
@@ -62,6 +67,10 @@
             @include media-breakpoint-up(sm) {
                 font-size: 1.6rem;
             }
+
+            &:hover{
+                color: $secondary;
+            }
         }
     }
 }
@@ -81,7 +90,7 @@
             text-decoration: none;
 
             &:hover{
-                color: $primary;
+                color: $secondary;
             }
         }
     }
@@ -100,7 +109,7 @@
             text-decoration: none;
 
             &:hover{
-                color: $primary;
+                color: $secondary;
                 text-decoration: underline;
             }
 
