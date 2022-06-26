@@ -10484,8 +10484,8 @@ svg {
 .services__pic img {
   max-width: 60% !important;
   margin: auto !important;
-  height: 34rem;
   border-radius: 0.5rem;
+  aspect-ratio: 2/3;
 }
 @media (max-width: 767.98px) {
   .services__pic img {
@@ -10495,7 +10495,12 @@ svg {
 
 @media (max-width: 575.98px) {
   .company-portfolio {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .company-portfolio {
+    flex-direction: column-reverse !important;
   }
 }
 
